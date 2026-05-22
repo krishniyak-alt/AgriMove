@@ -9,6 +9,9 @@ import { FarmerDashboard } from "@/components/FarmerDashboard";
 import { DriverDashboard } from "@/components/DriverDashboard";
 import { AdminDashboard } from "@/components/AdminDashboard";
 
+// Configure base URL for backend APIs depending on environment
+axios.defaults.baseURL = import.meta.env.VITE_API_URL || "";
+
 export default function App() {
   const [user, setUser] = useState<any>(null);
   const [token, setToken] = useState<string | null>(null);
