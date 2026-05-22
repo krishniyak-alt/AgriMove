@@ -70,10 +70,7 @@ export default function App() {
 
       const selected = demoDetails[role];
       const res = await axios.post("/api/auth/signup", {
-        name: selected.name,
-        phone: selected.phone,
         password: "demopassword123",
-        role: selected.role,
         ...selected
       }).catch(async (err) => {
         // If already registered, login
