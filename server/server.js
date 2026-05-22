@@ -40,8 +40,8 @@ app.get("/api/health", (req, res) => {
 async function startServer() {
   await connectDB();
   
-  app.listen(PORT, () => {
-    console.log(`🚀 AgriMove Backend running on http://localhost:${PORT}`);
+  app.listen(PORT, "0.0.0.0", () => {
+    console.log(`🚀 AgriMove Backend running on http://0.0.0.0:${PORT}`);
   });
 }
 
