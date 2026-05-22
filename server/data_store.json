@@ -1,0 +1,150 @@
+{
+  "users": [
+    {
+      "id": "usr_jah2lpzyd",
+      "name": "Test Farmer",
+      "phone": "9952670665",
+      "password": "$2a$10$ZK7WInjbBCOG1F69KUF0puXdO2XISqT2ddJ6efkt24gqXn3rGWlzS",
+      "role": "farmer",
+      "district": "Thanjavur",
+      "vehicleType": "",
+      "vehicleNumber": "",
+      "availability": true,
+      "latitude": 10.799844897741671,
+      "longitude": 79.12216526647812,
+      "createdAt": "2026-05-22T15:34:52.229Z"
+    },
+    {
+      "id": "usr_0wynyz7p8",
+      "name": "Selvam Lorry (Demo Driver)",
+      "phone": "9876543211",
+      "password": "$2a$10$wWEXG1Jckr9dpSzdQZSLpu70bkJAh6DW4n.TsYQfqLRW3TlS66RZC",
+      "role": "driver",
+      "district": "",
+      "vehicleType": "medium_truck",
+      "vehicleNumber": "TN 49 AB 5678",
+      "availability": true,
+      "latitude": 10.758710495973705,
+      "longitude": 79.09323242976978,
+      "createdAt": "2026-05-22T15:38:27.207Z"
+    },
+    {
+      "id": "usr_o78jtvu59",
+      "name": "System Admin (Demo Control)",
+      "phone": "9876543212",
+      "password": "$2a$10$LHE54cIIh6lAcbWOog7Aaus/yfoTl3cI9BOMQAbxRfMyjxdvhQs5e",
+      "role": "admin",
+      "district": "",
+      "vehicleType": "",
+      "vehicleNumber": "",
+      "availability": true,
+      "latitude": 10.77454625031407,
+      "longitude": 79.15832894199939,
+      "createdAt": "2026-05-22T15:38:27.338Z"
+    },
+    {
+      "id": "usr_feaii106g",
+      "name": "Ramesh Thanjavur (Demo Farmer)",
+      "phone": "9876543210",
+      "password": "$2a$10$ZK7WInjbBCOG1F69KUF0puXdO2XISqT2ddJ6efkt24gqXn3rGWlzS",
+      "role": "farmer",
+      "district": "Thanjavur",
+      "vehicleType": "",
+      "vehicleNumber": "",
+      "availability": true,
+      "latitude": 10.801419294953023,
+      "longitude": 79.13454882582505,
+      "createdAt": "2026-05-22T16:33:42.784Z"
+    }
+  ],
+  "requests": [
+    {
+      "_id": "req_wqmu7lx7a",
+      "farmer": "usr_jah2lpzyd",
+      "cropType": "Tomato",
+      "quantity": 300,
+      "pickupLocation": "Ooty",
+      "pickupCoords": {
+        "lat": 11.4166,
+        "lng": 76.695
+      },
+      "destinationLocation": "Koyambedu",
+      "destinationCoords": {
+        "lat": 13.0732,
+        "lng": 80.2012
+      },
+      "date": "2026-05-23",
+      "price": 4782,
+      "status": "assigned",
+      "voiceUrl": "",
+      "createdAt": "2026-05-22T16:29:41.600Z",
+      "driver": "usr_0wynyz7p8"
+    },
+    {
+      "_id": "req_7omz5dto1",
+      "farmer": "usr_feaii106g",
+      "cropType": "Onion",
+      "quantity": 500,
+      "pickupLocation": "Dharmapuri",
+      "pickupCoords": {
+        "lat": 12.1275,
+        "lng": 78.1582
+      },
+      "destinationLocation": "Chennai",
+      "destinationCoords": {
+        "lat": 13.0827,
+        "lng": 80.2707
+      },
+      "date": "2026-05-23",
+      "price": 3604,
+      "status": "assigned",
+      "voiceUrl": "",
+      "createdAt": "2026-05-22T17:04:40.899Z",
+      "driver": "usr_0wynyz7p8"
+    },
+    {
+      "_id": "req_5xiqoolrx",
+      "farmer": "usr_feaii106g",
+      "cropType": "Tomato",
+      "quantity": 500,
+      "pickupLocation": "Thanjavur",
+      "pickupCoords": {
+        "lat": 10.787,
+        "lng": 79.1378
+      },
+      "destinationLocation": "Market",
+      "destinationCoords": {
+        "lat": 13.0732,
+        "lng": 80.2012
+      },
+      "date": "2026-05-22",
+      "price": 3943,
+      "status": "pending",
+      "voiceUrl": "",
+      "createdAt": "2026-05-22T17:29:54.105Z"
+    },
+    {
+      "_id": "req_x2vm1142z",
+      "farmer": "usr_feaii106g",
+      "cropType": "Tomato",
+      "quantity": 500,
+      "pickupLocation": "Thanjavur",
+      "pickupCoords": {
+        "lat": 10.787,
+        "lng": 79.1378
+      },
+      "destinationLocation": "Market",
+      "destinationCoords": {
+        "lat": 13.0732,
+        "lng": 80.2012
+      },
+      "date": "2026-05-22",
+      "price": 3943,
+      "status": "pending",
+      "voiceUrl": "",
+      "createdAt": "2026-05-22T17:32:54.709Z"
+    }
+  ],
+  "groups": [],
+  "chats": []
+}
