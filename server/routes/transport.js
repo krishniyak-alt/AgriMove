@@ -682,7 +682,7 @@ async function autoGroupRequest(newReq) {
     if (useMock()) {
       // Find other ungrouped pending requests to the same general destination on same/similar date
       const candidates = mockStore.requests.filter(r => {
-        if (r.id === newReq.id || r._id === newReq._id) return false;
+        if ((r.id && r.id === newReq.id) || r._id === newReq._id) return false;
         if (r.status !== "pending" || r.group) return false;
         
         const destMatch = r.destinationLocation.toLowerCase().trim().includes(destination) ||
